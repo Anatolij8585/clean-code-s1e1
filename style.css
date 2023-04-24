@@ -4,46 +4,60 @@
     color: #333;
     font-family: Lato, sans-serif;
 }
+
 .header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.header .header-img {
+
+.header
+.header-img {
     width: 100%;
 }
-.header .more-information {
+
+.header
+.more-information {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
+.header {
+    text-align: center;
 }
 }
+
 .main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
+
 .task {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
+
 .task-row-wrapper {
     display: flex;
 }
+
 .lists {
     margin: 0;
     padding: 0;
 }
-.list, h3 {
+
+.list,
+h3 {
     list-style: none;
 }
-.task,button{
+
+.task, button{
     outline: none;
 }
+
 button {
     background: none;
     border: 0px;
@@ -53,6 +67,7 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
+
 button:hover {
     color: #3a3A3a;
 }
@@ -67,6 +82,7 @@ h3,
     margin: 0;
     text-transform: uppercase;
 }
+
 #task {
     margin: 0;
     font-size: 18px;
@@ -79,6 +95,7 @@ h3,
     font-family: Lato, sans-serif;
     color: #888;
 }
+
 #input:focus {
     color: #333;
 }
@@ -88,6 +105,7 @@ h3,
     display: block;
     margin: 0 0 20px;
 }
+
 #input#new-task {
     width: 318px;
 }
@@ -110,21 +128,24 @@ li {
 .list > #input-checkbox {
     margin: 0 10px;
 }
+
 .list > .task {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-.list >    input[type="text"] {
+
+.list > input[type="text"] {
     width: 226px;
 }
-button.delete img {
+.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+
+.delete img:hover {
     transform: rotateZ(0);
 }
 
@@ -135,15 +156,15 @@ button.delete img:hover {
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.lists input[type="text"] {
     display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+.edit-mode input[type="text"] {
     display: inline-block;
     width: 224px;
 }
 
-ul li.edit-mode label {
+.edit-mode label {
     display: none;
 }
